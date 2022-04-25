@@ -7,4 +7,4 @@ As for the TDD scenario, you only need to delete the CSI feedback step in the FD
 
 For more information, please visit our website [gaozhen16.github.io](https://gaozhen16.eu.org/)
 
-If you have any questions, If you have any questions, you can contact me by email: 1461610587@qq.com
+If you have any questions, you can contact me by email: 1461610587@qq.com

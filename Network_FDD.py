@@ -385,7 +385,7 @@ class DNN_BS_hyb_OFDM(nn.Module): #根据所有用户的反馈比特，输出混
         BB_imag = BB_imag.permute(1,0,2,3)
         
         F_real = (torch.matmul(RF_real,BB_real)-torch.matmul(RF_imag,BB_imag)).reshape(Nc,-1,K*Nt)
-        F_imag = (torch.matmul(RF_imag,BB_real)+torch.matmul(RF_imag,BB_real)).reshape(Nc,-1,K*Nt)
+        F_imag = (torch.matmul(RF_imag,BB_real)+torch.matmul(RF_real,BB_imag)).reshape(Nc,-1,K*Nt)
         F_real = F_real.permute(1,0,2)
         F_imag = F_imag.permute(1,0,2)
         F = torch.cat((F_real,F_imag), 2)
